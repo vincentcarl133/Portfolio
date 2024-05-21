@@ -1,175 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- =====BOX ICONS===== -->
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Vincent Carl Yoshino</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Carl</span><br> Web Developer</h1>
+
+                <a href="" class="button">Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/vcdyoshino" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-facebook-square' title="Facebook"></i></a>
+                <a href="mailto:yoshinocarl@gmail.com" target="_blank" class="home__social-icon"><i
+                        class='bx bx-mail-send' title="Gmail"></i></a>
+                <a href="https://github.com/vincentcarl133" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github' title="Github"></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+                    <h2 class="about__subtitle">I'am Carl</h2>
+                    <p class="about__text">
+                        Dedicated programmer seeking a position where I can apply my existing knowledge while remaining
+                        open to learning new technologies, and techniques when it comes to approaching logical problems.
+                        Committed to delivering high-quality code and contributing to project success.</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML</span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                        <div class="skills__bar skills__html">
+
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
                         </div>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bx-code-alt skills__icon"></i>
+                            <span class="skills__name">PHP</span>
+                        </div>
+                        <div class="skills__bar skills__php">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-jquery skills__icon'></i>
+                            <span class="skills__name">Jquery</span>
+                        </div>
+                        <div class="skills__bar skills__jquery">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-data skills__icon'></i>
+                            <span class="skills__name">Mysql</span>
+                        </div>
+                        <div class="skills__bar skills__dbase">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
                 </div>
-            </section>
+            </div>
+        </section>
+        <!--===== Experience =====-->
+        <section class="experience section " id="experience">
 
-            <!--===== CONTACT =====-->
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience__container">
+                <ul>
+                    <li>
+                        <p class="experience_text">Designed and Developed Loan Management System a secure document
+                            repository feature, enabling employees to upload
+                            and manage client documents seamlessly, resulting in a more organized and transparent loan
+                            application process.</p>
+                        <div class="experience_icons" style="display: flex; justify-content: flex-end;">
+                            <i class="bx bxl-html5 skills__icon" title="HTML"></i>
+                            <i class="bx bxl-javascript skills__icon" title="JavaScript"></i>
+                            <i class="bx bxl-css3 skills__icon" title="CSS"></i>
+                            <i class='bx bxl-jquery skills__icon' title="Jquery"></i>
+                            <i class="bx bx-code-alt skills__icon" title="PHP"></i>
+                            <i class='bx bxs-data skills__icon' title="Mysql"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="experience_text">Developed an email notification feature to alert the next person in
+                            the loan processing workflow whenever a file is uploaded,
+                            thereby streamlining communication and enhancing.</p>
+                        <div class="experience_icons" style="display: flex; justify-content: flex-end;">
+                            <i class="bx bxl-html5 skills__icon" title="HTML"></i>
+                            <i class="bx bxl-javascript skills__icon" title="JavaScript"></i>
+                            <i class="bx bx-code-alt skills__icon" title="PHP"></i>
+                            <i class='bx bxs-data skills__icon' title="Mysql"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="experience_text">Developed Automated email system, significantly optimizing loan
+                            processing by promptly alerting employees via email when
+                            clients were missing required documents, thus expediting resolution and ensuring a smooth
+                            application workflow.</p>
+                        <div class="experience_icons" style="display: flex; justify-content: flex-end;">
+                            <i class="bx bxl-html5 skills__icon" title="HTML"></i>
+                            <i class="bx bxl-javascript skills__icon" title="JavaScript"></i>
+                            <i class="bx bx-code-alt skills__icon" title="PHP"></i>
+                            <i class='bx bxs-data skills__icon' title="Mysql"></i>
+                        </div>
+
+                    </li>
+                    <li>
+                        <p class="experience_text">Implemented FTP requests to enable automatic data transfer to another
+                            web server storage, facilitating external client
+                            access to the data without directly interfacing with the Loan Management System.
+                            Additionally, configured the system to
+                            initiate FTP requests every time a file is uploaded in the Loan Management System, ensuring
+                            seamless synchronization of
+                            data between servers.</p>
+                        <div class="experience_icons" style="display: flex; justify-content: flex-end;">
+                            <i class="bx bxl-html5 skills__icon" title="HTML"></i>
+                            <i class="bx bxl-javascript skills__icon" title="JavaScript"></i>
+                            <i class="bx bx-code-alt skills__icon" title="PHP"></i>
+                            <i class='bx bxs-file skills__icon' title="FTP"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="experience_text">Developed the Data Import Manager, a tool specifically tailored for
+                            simplifying data management tasks. This feature
+                            facilitated the effortless import of customer data from Excel files, ensuring consistent
+                            formatting of dates and addresses,
+                            thereby improving data accuracy and efficiency.</p>
+                        <div class="experience_icons" style="display: flex; justify-content: flex-end;">
+                            <i class="bx bxl-html5 skills__icon" title="HTML"></i>
+                            <i class="bx bxl-javascript skills__icon" title="JavaScript"></i>
+                            <i class="bx bxl-css3 skills__icon" title="CSS"></i>
+                            <i class="bx bx-code-alt skills__icon" title="PHP"></i>
+                            <i class='bx bxs-data skills__icon' title="Mysql"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <!--===== PERSONAL PROJECT =====-->
+        <section class="project section" id="project">
+            <h2 class="section-title">Personal Project</h2>
+            <div class="container mt-5 custom-container">
+                <div class="row row-cols-2 row-cols-md-3 g-5">
+                    <!-- TO DO LIST APP -->
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/todolist.gif"
+                                style="height: 14rem; box-shadow: 0 1px  rgba(0, 0, 0, 0.3);" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">TO DO LIST</h5>
+                                <div class="project-icon" style="display: flex;">
+                                    <i class="bx bxl-html5 project__icon" title="HTML"></i>
+                                    <i class="bx bxl-javascript project__icon" title="JavaScript"></i>
+                                    <i class="bx bxl-css3 project__icon" title="CSS"></i>
+                                </div>
+                                <p class="card-text"></p>
+                                <a href="https://vincentcarl133.github.io/to_do_list/" class="btn btn-secondary"
+                                    target="_blank">Live Demo</a>
+                                <a href="https://github.com/vincentcarl133/to_do_list" class="btn btn-secondary"
+                                    target="_blank">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WEATHER APP -->
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/weather.jpg" style="height: 14rem;"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">WEATHER APP</h5>
+                                <div class="project-icon" style="display: flex;">
+                                    <i class="bx bxl-html5 project__icon" title="HTML"></i>
+                                    <i class="bx bxl-javascript project__icon" title="JavaScript"></i>
+                                    <i class="bx bxl-css3 project__icon" title="CSS"></i>
+                                    <i class="bx bx-cog project__icon" title="API"></i>
+                                </div>
+                                <p class="card-text"></p>
+                                <a href="https://vincentcarl133.github.io/weatherApp/"  target="_blank" class="btn btn-secondary">Live Demo</a>
+                                <a href="https://github.com/vincentcarl133/weatherApp"  target="_blank" class="btn btn-secondary">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Typing Test -->
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/typeTest.gif" style="height: 14rem;"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">TYPING TEST</h5>
+                                <div class="project-icon" style="display: flex;">
+                                    <i class="bx bxl-html5 project__icon" title="HTML"></i>
+                                    <i class="bx bxl-javascript project__icon" title="JavaScript"></i>
+                                    <i class="bx bxl-css3 project__icon" title="CSS"></i>
+                                </div>
+                                <p class="card-text"></p>
+                                <a href="https://vincentcarl133.github.io/typingTest/"  target="_blank" class="btn btn-secondary">Live Demo</a>
+                                <a href="https://github.com/vincentcarl133/typingTest"  target="_blank" class="btn btn-secondary">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/work1.jpg" style="height: 14rem;"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Soon...</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-secondary">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/work1.jpg" style="height: 14rem;"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Soon...</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-secondary">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 19rem;">
+                            <img class="card-img-top" src="assets/img/work1.jpg" style="height: 14rem;"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Soon...</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-secondary">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">Git Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact  -->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
@@ -178,28 +364,25 @@
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                        <input type="button" value="SEND" class="contact__button button">
                     </form>
                 </div>
             </section>
-        </main>
+    </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+    <footer class="footer">
+        <p class="footer__title">Built With:</p>
+        <div class="footer__social">
+            <span class="footer__icon" title="HTML"><i class='bx bxl-html5'></i></span>HTML
+            <span class="footer__icon" title="JAVASCRIPT"><i class='bx bxl-javascript'></i></span>JavaScript
+            <span class="footer__icon" title="CSS"><i class='bx bxl-css3'></i></span>CSS
+        </div>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
