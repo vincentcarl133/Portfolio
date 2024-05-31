@@ -258,11 +258,6 @@ img {
 
 /* ===== experience =====*/
 .experience__container {
-  row-gap: 2rem;
-  text-align: left;
-  margin-right: 200px;
-  margin-left: 200px;
-  border-radius: 1px solid;
   
 }
 
@@ -352,12 +347,7 @@ img {
 }
 
 /* ===== PERSONAL PROJECT =====*/
-.container.custom-container {
-  margin-left: auto; /* Set left margin to auto */
-  margin-right: auto; /* Set right margin to auto */
-  padding-left: 140px; /* Adjust the left padding as needed */
-  padding-right: 110px; /* Adjust the right padding as needed */
-}
+
 .project__icon {
   font-size: 1.5rem;
   margin-right: var(--mb-1);
@@ -533,5 +523,39 @@ img {
   }
   .home__img {
     width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience__container {
+      padding: 10px;
+  }
+
+  .experience__container li {
+      margin-bottom: 15px;
+      padding: 10px;
+  }
+
+  .experience_icons {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .experience_icons i {
+      margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience__container li {
+      padding: 8px;
+  }
+
+  .experience_text {
+      font-size: 14px;
+  }
+
+  .experience_icons i {
+      font-size: 20px;
   }
 }
