@@ -26,7 +26,13 @@
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
+            <div style ="display: flex;  align-items: center;">
+                <div class="newtons-cradle">
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    <div class="newtons-cradle__dot"></div>
+                    </div>
                 <a href="#" class="nav__logo">Vincent Carl Yoshino</a>
             </div>
 
@@ -49,11 +55,12 @@
 
     <main class="l-main">
         <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
+        <section class="home bd-grid " id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Carl</span><br> Web Developer</h1>
+                
+                <h1 class="home__title"><br>I am <span class="home__title-color">Carl</span><br> Web Developer</h1>
 
-                <a href="assets/img/CResume.pdf" target="_blank" class="button">Resume</a>
+                <a href="assets/img/resume.pdf" target="_blank" class="button">Resume</a>
             </div>
 
             <div class="home__social">
@@ -81,14 +88,13 @@
                 <div class="about__img">
                     <img src="assets/img/about.jpg" alt="">
                 </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Carl</h2>
+                <div class="container_text">
                     <p class="about__text">
-                        Dedicated programmer seeking a position where I can apply my existing knowledge while remaining
-                        open to learning new technologies, and best practices when it comes to approaching logical problems.
-                        Committed to delivering high-quality code and contributing to project success.</p>
+                        As a dedicated programmer, I actively seek dynamic roles to leverage my extensive knowledge and skills. With a passion for embracing new technologies and implementing best practices in problem-solving, I am committed to delivering high-quality code that drives project success. I continuously enhance my skills through rigorous learning. My goal is to contribute effectively to innovative projects that push boundaries and set new standards in Web development.
+                    </p>
                 </div>
+                
+                
             </div>
         </section>
 
@@ -98,25 +104,14 @@
 
             <div class="skills__container bd-grid">
                 <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML</span>
+                            <i class='bx bxl-html5 skills__htmlcss'></i>
+                            <i class='bx bxl-css3 skills__htmlcss'></i>
+                            <span class="skills__name">HTML/CSS</span>
                         </div>
                         <div class="skills__bar skills__html">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">90%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS</span>
-                        </div>
-                        <div class="skills__bar skills__css">
 
                         </div>
                         <div>
@@ -157,6 +152,18 @@
                         </div>
                         <div>
                             <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-dropbox skills__icon'></i>
+                            <span class="skills__name">Laravel</span>
+                        </div>
+                        <div class="skills__bar skills__laravel">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
                         </div>
                     </div>
                     <div class="skills__data">
@@ -317,18 +324,24 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Inventory -->
                     <div class="col">
                         <div class="card" style="width: 19rem;">
-                            <img class="card-img-top" src="assets/img/work1.jpg" style="height: 14rem;"
+                            <img class="card-img-top" src="assets/img/inventory.gif" style="height: 14rem;"
                                 alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Soon...</h5>
+                                <h5 class="card-title">Inventory|Ordering System</h5>
                                 <div class="project-icon" style="display: flex;">
                                     <i class="bx bxl-html5 project__icon" title="HTML"></i>
+                                    <i class="bx bxl-javascript project__icon" title="JavaScript"></i>
+                                    <i class="bx bxl-css3 project__icon" title="CSS"></i>
+                                    <i class="bx bxl-dropbox project__icon" title="Laravel"></i>
+                                    <i class='bx bxs-data project__icon' title="Mysql"></i>
                                 </div>
                                 <p class="card-text"></p>
-                                <a href="#" class="btn btn-secondary">Live Demo</a>
-                                <a href="#" class="btn btn-secondary">Git Hub</a>
+                                <a href="error/404.html"  target="_blank" class="btn btn-secondary">Live Demo</a>
+                                <a href="https://github.com/vincentcarl133/inventory" class="btn btn-secondary"
+                                target="_blank">Git Hub</a>
                             </div>
                         </div>
                     </div>
